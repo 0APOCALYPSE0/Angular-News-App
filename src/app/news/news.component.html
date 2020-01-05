@@ -1,0 +1,13 @@
+<div class='container'>
+    <div class="row">
+        <div class="card text-black bg-default mb-3 mr-0 col-sm-4" style="max-width: 25rem;" *ngFor="let article of articles">
+            <div class="card-header">News Article</div>
+            <div class="card-body">
+                <h4 class="card-title">{{article.title}}</h4>
+                <p class="card-text">{{article.description}}</p>
+                <a href="{{article.url}}" class='btn btn-info'>Read full article</a>
+            </div>
+        </div>
+    </div>
+</div>
+ 
